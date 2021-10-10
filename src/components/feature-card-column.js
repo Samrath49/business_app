@@ -8,7 +8,7 @@ export default function FeatureCardColumn({
   text,
 }) {
   return (
-    <h1>FeatureCardColumn</h1>
+    
   );
 }
 

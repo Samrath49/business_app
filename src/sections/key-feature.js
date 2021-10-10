@@ -51,6 +51,16 @@ export default function KeyFeature() {
           slogan="Whats the function"
           title="Meet the feature of our product"
         />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <FeatureCardColumn
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              text={item.text}
+            />
+          ))}
+        </Grid>
       </Container>
     </section>
   );
