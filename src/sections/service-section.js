@@ -36,6 +36,10 @@ const data = {
 };
 
 export default function ServiceSection() {
+  const handleClick = (e) => {
+    e.preventDefault();
+    setVideoOpen(true);
+  }
   return (
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
@@ -43,9 +47,12 @@ export default function ServiceSection() {
           <Image src={ServiceThumb} alt="Thumbnail" />
           <Button
             sx={styles.videoBtn}
+            onClick={handleClick}
             aria-label="Play Button"
           >
-
+            <span>
+              <IoIosPlay />
+            </span>
           </Button>
         </Box>
       </Container>
