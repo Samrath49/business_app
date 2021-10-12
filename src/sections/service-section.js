@@ -60,6 +60,18 @@ export default function ServiceSection() {
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title} />
+
+          <Grid sx={styles.grid}>
+            {data.features.map((feature) => (
+              <Box sx={styles.card} key={feature.id}>
+                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
+
+                <Box sx={styles.wrapper} >
+
+                </Box>
+              </Box>
+            ))}
+          </Grid>
         </Box>
       </Container>
     </section>
