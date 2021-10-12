@@ -66,8 +66,9 @@ export default function ServiceSection() {
               <Box sx={styles.card} key={feature.id}>
                 <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon} />
 
-                <Box sx={styles.wrapper} >
-
+                <Box sx={styles.wrapper}>
+                  <Heading sx={styles.wrapper.title}>{feature.title}</Heading>
+                  <Text sx={styles.wrapper.subTitle}>{feature.text}</Text>
                 </Box>
               </Box>
             ))}
