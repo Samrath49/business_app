@@ -43,6 +43,13 @@ export default function WorkFlow() {
           title="Meet the feature of our product"
           isWhite={true}
         />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <Box sx={styles.card} key={item.id}>
+              <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
+            </Box>
+          ))}
+        </Grid>
       </Container>
     </section>
   );
