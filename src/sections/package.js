@@ -304,6 +304,15 @@ export default function Package() {
             </button>
           </Box>
         </Flex>
+        <Box className='pricing__wrapper' sx={styles.pricingWrapper}>
+          <Carousel {...sliderParams} >
+            {state.pricingPlan.map((packageData) => (
+              <Box sx={styles.pricingItem} key={packageData.id}>
+                <PriceCard data={packageData} />
+              </Box>
+            ))}
+          </Carousel>
+        </Box>
       </Container>
     </section>
   );
