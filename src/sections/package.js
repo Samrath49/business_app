@@ -60,7 +60,7 @@ const packages = {
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "100's of Templates",
           isAvailable: true,
         },
         {
