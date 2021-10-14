@@ -12,9 +12,12 @@ export default function List({ items = [], parentStyle, childStyle }) {
         ...parentStyle
       }}
     >
-      {items.map((item) => (
+      {items.map((item, i) => (
         <Flex
-          className={isAvailable ? 'open' : 'closed'}
+          className={item.isAvailable ? 'open' : 'closed'}
+          as="li"
+          sx={{ ...childStyle }}
+          key={i}
         ></Flex>
       ))}
     </Box>
