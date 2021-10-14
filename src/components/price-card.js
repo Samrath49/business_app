@@ -32,6 +32,14 @@ export default function PriceCard({
           <span>/Monthly</span>
         </Text>
       </Box>
+      <Box sx={styles.buttonGroup}>
+        <Button variant="primary" aria-label={buttonText}>
+          {buttonText}
+        </Button>
+        {anotherOption && (
+          <Button variant="textButton" className="free__trial" area-label={anotherOption} sx={{ color: 'black' }}>{anotherOption}</Button>
+        )}
+      </Box>
     </Card>
   );
 }
