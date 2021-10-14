@@ -26,7 +26,7 @@ const packages = {
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "100's of Templates",
           isAvailable: true,
         },
         {
@@ -125,7 +125,7 @@ const packages = {
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "100's of Templates",
           isAvailable: true,
         },
         {
@@ -207,7 +207,7 @@ const packages = {
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "10,000+ Templates",
           isAvailable: true,
         },
         {
