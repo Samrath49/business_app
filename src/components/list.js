@@ -18,7 +18,12 @@ export default function List({ items = [], parentStyle, childStyle }) {
           as="li"
           sx={{ ...childStyle }}
           key={i}
-        ></Flex>
+        >
+          <IconButton sx={styles.listIcon} aria-label="list icon">
+            {item.icon}
+          </IconButton>
+          {item.text}
+        </Flex>
       ))}
     </Box>
   );
