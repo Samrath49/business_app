@@ -6,7 +6,11 @@ import FooterLogo from 'assets/logo.svg';
 
 export default function Footer() {
   return (
-    <h1>Footer</h1>
+    <footer sx={styles.footer}>
+      <Container>
+        <Box sx={styles.footer.footerBottomArea}></Box>
+      </Container>
+    </footer>
   );
 }
 
