@@ -19,6 +19,7 @@ export default function Footer() {
               ))}
             </nav>
           </Box>
+          <Text sx={styles.footer.copyright}>Copyright by {new Date().getFullYear()} AiBoost </Text>
         </Box>
       </Container>
     </footer>
