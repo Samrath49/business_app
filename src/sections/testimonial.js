@@ -116,7 +116,7 @@ export default function TestimonialCard() {
               <Text sx={styles.description}>{item.description}</Text>
               <div className="card-footer">
                 <div className="image">
-                  <Image src={item.avatar} alt="Client Image"> </Image>
+                  <Image src={item.avatar} alt="Client Image" />
                 </div>
               </div>
             </Box>
