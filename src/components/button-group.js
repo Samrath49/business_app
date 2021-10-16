@@ -11,7 +11,7 @@ export default function ButtonGroup({ next, previous }) {
             <IoIosArrowRoundBack />
           </button>
           <button onClick={next} aria-label="Next">
-            <IoIosArrowRoundBack />
+            <IoIosArrowRoundForward />
           </button>
         </Box>
       </Container>
